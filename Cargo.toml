@@ -21,4 +21,17 @@ path = "src/traits/1.rs"
 name = "list"
 path = "src/list.rs"
 
+[[bin]]
+name = "iterators"
+path = "src/traits/iterators.rs"
+
+[[bin]]
+name = "supertraits"
+path = "src/traits/supertraits.rs"
+
+[[bin]]
+name = "dyn"
+path = "src/traits/dyn.rs"
+
+
 [dependencies]
