@@ -5,4 +5,20 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "gen1"
+path = "src/generics/1.rs"
+
+[[bin]]
+name = "gen2"
+path = "src/generics/2.rs"
+
+[[bin]]
+name = "traits1"
+path = "src/traits/1.rs"
+
+[[bin]]
+name = "list"
+path = "src/list.rs"
+
 [dependencies]
