@@ -19,25 +19,18 @@ impl Point<f32> {
 fn main() {
     let integer = Point { x: 5, y: 10 };
     let float = Point { x: 1.0, y: 4.0 };
-    //let mixed = Point {x: 1, y: 4.0};
+    // let mixed = Point {x: 1, y: 4.0};
 
     println!("int Point x: {}", integer.x());
     println!("float Point x: {}", float.x());
     println!("float Point dist: {}", float.distance_from_origin());
     //println!("int Point dist: {}", integer.distance_from_origin());
-    // float.cmp_display();
+    float.cmp_display();
 }
 
 
 //Traits
 use std::fmt::Display;
-
-
-impl<T> Point<T> {
-    fn new(x: T, y: T) -> Self {
-        Self { x, y }
-    }
-}
 
 impl<T: Display + PartialOrd> Point<T> {
     fn cmp_display(&self) {
